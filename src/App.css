@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Montserrat&display=swap');
+body{
+    margin: 0;
+    background-color:  	#463970;
+    color: #d5dfe7;
+    font-family: "Comfortaa", sans-serif;
+    font-size: 2vmax;
+}
+
+
+/* Form stuff */
+input[type=text]{
+    margin:15px 0px;
+    border-radius:5px;
+    background:#F6F7F9;
+    border:none;
+    padding:0px 10px;
+    width:80%;
+    height:40px;
+    outline:none;
+    font-size: 1.5vmax;
+}
+
+.btn{
+    font-size: 1.4vmax;
+    padding:0px 10px;
+    background:#83555580;
+    color:#ffffff;
+    height:40px;
+    width:80%;
+    border:none;
+    border-radius:5px;
+    cursor: pointer;
+}
+
+/* Images */
+.background{
+    position: absolute;
+    width: 100%;
+    height: 60vmax;
+    z-index: -20;
+}
+.ico{
+    width: 20%;
+    height: auto;
+    z-index: 1;
+}
+
+/* Data */
+.data{
+    font-size: 2.5vw;
+}
+
+/* Containers */
+.App{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+}
+
+.day{
+    /* flex: 1 0; */
+    display:flex;
+    justify-content: space-around;
+    height: 20%;
+}
+
+/* .daysDisplay{
+    height: max-content;
+} */
+
+.data{
+    flex: 1;
+    align-self: center;
+}
+
+form{
+    align-self: center;
+    display: inline-block;
+    text-align: center;
+}
+
+/* Extras */
+::-webkit-scrollbar{
+    width:20px;
+}
+::-webkit-scrollbar-button{
+    background: #181427;
+}
+::-webkit-scrollbar-track {
+    background: #332a52; 
+}
+::-webkit-scrollbar-thumb {
+    background: #5d5780e8; 
+}  
+::-webkit-scrollbar-thumb:hover {
+    background: #201a33; 
+}
