@@ -15,7 +15,8 @@ class App extends Component{
     }
     grabData(lat, lon, city) {        
         console.log('Loading json');
-        const BASE_URL = "https://api.openweathermap.org/data/2.5/forecast?units=imperial&appid=8837842b8a4b67a54f7e2d4a014a8a2f";
+        const APP_ID = process.env.REACT_APP_APP_ID
+        const BASE_URL = "https://api.openweathermap.org/data/2.5/forecast?units=imperial&appid=" + APP_ID;
         let URL = `${BASE_URL}&q=${city}`
         if (lon, lat){
             URL = `${BASE_URL}&lat=${lat}&lon=${lon}`
